@@ -1,0 +1,125 @@
+/* DOM Challenge */
+
+html,
+body {
+  width: 100%;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  width: 40%;
+  background-color: #aad9ff;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+input.input {
+  width: 70%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+input.add {
+  width: 25%;
+  height: 38px;
+  border: none;
+  background-color: #2c4cff;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input.add:hover {
+  background-color: #0080ff;
+}
+
+.tasks {
+  background-color: #aad9ff;
+  width: 40%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.task {
+  background-color: #00bbff;
+  font-size: 20px;
+  padding: 15px;
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tasks .task:not(:last-child) {
+  margin-bottom: 25px;
+}
+.tasks .task:hover {
+  background-color: #56caff;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+span.del {
+  font-size: 14px;
+  background-color: red;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: cursive;
+  cursor: pointer;
+}
+span.del:hover {
+  background-color: rgb(251, 104, 104);
+}
+del {
+  position: absolute;
+  width: 40%;
+  height: 1px;
+}
+p {
+  width: 80%;
+  background-color: white;
+  height: 2px;
+  position: relative;
+  bottom: 8px;
+}
+div.strike {
+  text-decoration: line-through 2px;
+}
+
+@media (max-width: 650px) {
+  .form {
+    width: 80%;
+    height: 90px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 35px;
+  }
+  input.input {
+    width: 95%;
+  }
+  .tasks {
+    width: 80%;
+  }
+  del {
+    width: 70%;
+  }
+}
