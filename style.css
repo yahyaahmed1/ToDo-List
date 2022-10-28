@@ -7,6 +7,12 @@ body {
 body {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
 }
 .container {
   margin-top: 25px;
@@ -15,21 +21,22 @@ body {
   align-items: center;
 }
 .form {
-  width: 40%;
+  width: 45%;
   background-color: #aad9ff;
   padding: 25px;
   display: flex;
-  justify-content: space-between;
   border-radius: 10px;
   margin-bottom: 35px;
+  justify-content: space-between;
 }
 input.input {
-  width: 70%;
+  width: 65%;
   height: 35px;
   border: none;
   border-radius: 10px;
   outline: none;
   padding-left: 10px;
+  padding-right: 10px;
   font-size: 16px;
 }
 input.add {
@@ -43,6 +50,7 @@ input.add {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "Fuzzy Bubbles", cursive;
 }
 input.add:hover {
   background-color: #0080ff;
@@ -50,7 +58,7 @@ input.add:hover {
 
 .tasks {
   background-color: #aad9ff;
-  width: 40%;
+  width: 45%;
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -77,6 +85,9 @@ input.add:hover {
 .tasks .task.done {
   opacity: 0.5;
 }
+div.strike {
+  text-decoration: line-through 2px;
+}
 span.del {
   font-size: 14px;
   background-color: red;
@@ -85,6 +96,7 @@ span.del {
   font-weight: bold;
   font-family: cursive;
   cursor: pointer;
+  text-decoration: none;
 }
 span.del:hover {
   background-color: rgb(251, 104, 104);
@@ -100,9 +112,6 @@ p {
   height: 2px;
   position: relative;
   bottom: 8px;
-}
-div.strike {
-  text-decoration: line-through 2px;
 }
 
 @media (max-width: 650px) {
