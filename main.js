@@ -70,8 +70,9 @@ function addTasksToPage(arrTasks) {
     div.appendChild(document.createTextNode(task.title));
     // Delete Button For Each Task
     let span = document.createElement("span");
+    let icon = `<i class="fa-solid fa-xmark"></i>`
     span.className = "del";
-    span.appendChild(document.createTextNode("X"));
+    span.innerHTML = icon;
     // add button to div
     div.appendChild(span);
     // add the task to tasks container
