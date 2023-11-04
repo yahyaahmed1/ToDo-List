@@ -5,10 +5,12 @@ body {
   width: 100%;
   height: 100%;
 }
+* {
+	font-family: "Fuzzy Bubbles", cursive;
+}
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Fuzzy Bubbles", cursive;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
